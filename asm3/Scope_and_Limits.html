@@ -20,7 +20,26 @@
 
   <!-- Custom styles for this template -->
   <link href="../css/clean-blog.min.css" rel="stylesheet">
+    <style>
+      table,th,td{
+        border: 1px solid black;border-spacing: 5px
+      }
+      th,td{ padding: 15px; text-align: center;
+      }
+      #r1{
+        background-color: cyan
+      }
+      #r2{background-color:lightyellow
+      }
+      #r3{background-color:	#FA8072
+      }
+      #p1{
+        display: list-item;
+        list-style-type: disc inside;
+      }
 
+      
+    </style>
 </head>
 
 <body>
@@ -36,9 +55,6 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="teamprofile.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../post.html">Post</a>
@@ -97,14 +113,122 @@
           <img class="img-fluid" src="../img/test.jpg" alt="test">
         </a>
         <p>
-
+          Bottom-up Testing is an incremental integration testing approach in which low-level modules are tested first, and then high-level modules are tested (GeeksforGeeks 2020). For the foundational testing process for the AZ Butler, our team implemented the Bottom-up Testing method, particularly, we would test each function of the robot, then conduct a final test to see if all functions are able to collaborate with each other. Since testing a real robot is very complex and high-technological, we will briefly explain our test for the prototype, which is considered as some first steps to test a robot. These under experimentations are tailored for our prototypes - the Arduino Smart Car kit.
         </p>
-
+        <h5>Test function 1: Able to move around without hitting an obstacle</h5>
+        <p>
+          For this test, a wide flat ground and stuff like chairs and boxes would be required. The robot will be put in a ground and surrounded by multiple obstacles. The team will observe if the robot is able to move without hitting an obstacle and find its way out. This test was conducted and the results showed that for most of the obstacles, the AZ robot is able to be aware of and stay away from. However, objects that are too low for the robot’s vision or are in the color black, the robot is not able to understand and keeps hitting them.
+        </p>
+        <h5>Test function 2: Able to detect fire and smoke</h5>
+        <p>
+          The robot would be put in a room and fire would be caused by the team to see if the robot is able to show data that fire is near and ring the bell, and what is the longest distance of the fire that the robot will be able to detect. To conduct this experiment, fire will be lit 5 meters, 10 meters and different floors away from the robot.
+        </p>
+        <h5>Test function 3: Able to detect light</h5>
+        <p>
+          The robot would be put in a room and the electrical lights would be turned on and off to see if the robot is able to show data that the house is out of light and inform the house owners.
+        </p>
+        <h5>Test function 4: Able to automatically define, detect and remember people, animals, plants and objects.</h5>
+        <p>
+          The safety of humans and the family host is the priority when creating a robot. With AI-powered algorithms, the AZ Butler will be able to define, recognize and remember the family host, their relatives and friends, their pets and other related things to the house and the neighborhood. To go into details, to test its ability, we will set up a person, a dog and a tree and carefully monitor its reaction to them. For serving a person, it needs to say “Hello, how can I help you?” and smile. For a dog, it will fondle the dog affectionately and feed it a little bit. And for a plant, it knows how to water the plant and bring it to a light sunray. With these actions, the robot will be proved to perform well in regards to the recognition phase. 
+        </p>
+        <h5>Test function 5: Able to automatically learn the house floor plan and neighborhood map using AI</h5>
+        <p>
+          An actual house would be required for this testing. Specifically, the robot will be put in such a house and the team will observe how much time it takes to learn all house design. Then, the robot will be put outside and furniture locations will be changed to observe if the robot is able to aware that furniture has been moved and find a new movement in the house, however, the basic house floor plan remains the same. In the future, we will put the test in a defined area, with several houses, supermarkets and pharmacy drugstores, to test the ability of remembering the route and understand every location. We want to make sure that the AZ Butler can recognize which one the supermarket is, which one the neighboring house is. For instance, the ability to recognize the logo of the supermarket, the logo and color of drugstores would be an evidence of AI’s success. 
+        </p>
+        <h5>Test function 5: Able to store and exploit data from Cloud Computing</h5>
+        <p>
+          Utilizing the previous test, the robot’s data storage will be observed if the new house design has been integrated with the old house design. Additionally, the security level of the house design data will be tested if unauthorized users would be able to access the data.
+        </p>
+        <h5>Overall test:</h5>
+        <p>
+          The robot would be put in a house with a different furniture layout, fire would be lit at the same time with the light being cut off. Then, the team will observe if the robot is able to go to the fire destination, ring the fire alarm and announce to the house owner that there is a light shortage without experiencing any accidents on its way.
+        </p>
 
         <h3>Time frame</h3>
-        <p>
-
-        </p>
+        <table style="width: auto;">
+          <tr id="r1">
+            <th style="text-align: left;">
+              Week              
+            </th>
+            <th style="text-align: left;">
+              Task Description             
+            </th>          
+          </tr>
+          <tr id="r2">
+            <td>Week 1</td>
+            <td>
+              Brainstorm for the project idea
+            </td>            
+          </tr>
+          <tr id="r2">
+            <td>Week 2</td>
+            <td>Conduct market research and analysis (seeking feedback, online survey and interview)</td>
+          </tr>
+          <tr id="r2">
+            <td>Week 3 </td>
+            <td>Research on tools and technologies required for the project and how to implement them to the project</td>
+          </tr>
+          <tr id="r2">
+            <td>Week 4</td>
+            <td>Finish writing the report</td>          
+          </tr>
+          <tr id="r3">
+            <td>Week 5</td>
+            <td>
+              Purchase and assembly the hardware that enable proximity sensor
+            </td>
+          </tr>
+          <tr id="r3">
+            <td>Week 6</td>
+            <td>Develop the software that enable proximity senso</td>
+          </tr>
+          <tr id="r3">
+            <td>Week 7</td>
+            <td>
+              Test the proximity function of the robot and make improvement on both hardware and software
+              </td>              
+          </tr>
+          <tr id="r3">
+            <td>Week 8</td>
+            <td>Install and test heat, fire, and smoke sensor, both hardware and software</td>      
+          </tr>
+          <tr id="r3">
+            <td>Week 9</td>
+            <td>Install and test light sensor, both hardware and software</td>
+          </tr>
+          <tr id="r3">
+            <td>Week 10</td>
+            <td>Work on Cloud computing function's software</td>
+          </tr>
+          <tr id="r3">
+            <td>Weel 11</td>
+            <td>
+              Test the AI function of the robot and make improvement on software
+            </td>            
+          </tr>
+          <tr id="r3">
+            <td>Week 12</td>
+            <td>Work on Cloud computing function's hardware</td>
+          </tr>
+          <tr id="r3">
+            <td>Week 13</td>
+            <td>Design the robot structure</td>
+          </tr>
+          <tr id="r3">
+            <td>Week 14</td>
+            <td>
+              Purchase and assembly all robot components and materials
+            </td>
+          </tr>
+          <tr id="r3">
+            <td>Week 15</td>
+            <td>Final testing and make improvement</td>
+          </tr>
+          <tr id="r3">
+            <td>Week 16</td>
+            <td>Seeking investors and advertise the AZ Butler</td>
+          </tr>
+        </table>
 
 
         <h3>Risks</h3>
@@ -215,7 +339,7 @@
             </a>
           </li>
         </ul>
-        <p class="copyright text-muted">Copyright &copy; Anh Pham 2020</p>
+        <p class="copyright text-muted">Copyright &copy; RobotZ Team 2021</p>
       </div>
     </div>
   </div>
